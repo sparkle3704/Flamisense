@@ -1,0 +1,75 @@
+# Magento-specific files
+/app/etc/env.php          
+/app/etc/config.php            
+
+/*.bat
+
+# Magento generated files
+/generated/
+/pub/static/
+/var/
+/lib/internal/
+/phpserver/
+
+# Magento cache and temporary files, excluding essential media files
+/var/cache/
+/var/page_cache/
+/var/view_preprocessed/
+/pub/media/tmp              # Temporary media files
+/pub/media/catalog/product/cache  # Cached product images
+
+# Include necessary media files but exclude temporary files
+!/pub/media/catalog/product
+!/pub/media/catalog/category
+
+# Magento 2 sample data modules
+/app/code/Magento/SampleData/
+
+# Composer and Node dependencies
+/vendor/
+node_modules/
+composer.lock
+
+# Cache and log files
+*.log
+*.cache
+*.gz
+*.bak
+
+/app/etc/env.php          
+/app/etc/config.php
+
+# Environment-specific files
+/.env
+.DS_Store
+.idea/
+/nbproject/
+/*.swp
+*.swo
+.phpstorm.meta.php
+
+# OSX system files
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows system files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# IDE and editor files
+.vscode/
+*.iml
+*.sublime-project
+*.sublime-workspace
+.phpstorm.meta.php
+
+# SASS cache
+.sass-cache
+
+# PHPUnit result cache
+.phpunit.result.cache
+
+# Ignore test directories (optional)
+dev/tests/
